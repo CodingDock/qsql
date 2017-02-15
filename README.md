@@ -32,9 +32,6 @@ public class QSqlTest {
 ##  展示
 
 ```bash
-/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/bin/java -agentlib:jdwp=transport=dt_socket,address=127.0.0.1:50058,suspend=y,server=n -ea -Didea.junit.sm_runner -Dfile.encoding=UTF-8 -classpath "/Applications/IntelliJ IDEA.app/Contents/lib/idea_rt.jar:/Applications/IntelliJ IDEA.app/Contents/plugins/junit/lib/junit-rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/dt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/javafx-mx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/jconsole.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/packager.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/sa-jdi.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_101.jdk/Contents/Home/lib/tools.jar:/Users/biezhi/workspace/projects/java/qsql/target/test-classes:/Users/biezhi/workspace/projects/java/qsql/target/classes:/usr/local/apache-maven-3.3.9/repo/mysql/mysql-connector-java/5.1.40/mysql-connector-java-5.1.40.jar:/usr/local/apache-maven-3.3.9/repo/de/vandermeer/asciitable/0.2.5/asciitable-0.2.5.jar:/usr/local/apache-maven-3.3.9/repo/de/vandermeer/asciilist/0.0.3/asciilist-0.0.3.jar:/usr/local/apache-maven-3.3.9/repo/org/apache/commons/commons-lang3/3.4/commons-lang3-3.4.jar:/usr/local/apache-maven-3.3.9/repo/junit/junit/4.12/junit-4.12.jar:/usr/local/apache-maven-3.3.9/repo/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar" com.intellij.rt.execution.junit.JUnitStarter -ideVersion5 com.qsql.QSqlTest
-Connected to the target VM, address: '127.0.0.1:50058', transport: 'socket'
-Wed Feb 15 22:56:09 CST 2017 WARN: Establishing SSL connection without server's identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn't set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to 'false'. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │                                                QSQL v1.0 (by biezhi)                                                 │
 └──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
@@ -48,7 +45,71 @@ Wed Feb 15 22:56:09 CST 2017 WARN: Establishing SSL connection without server's 
 ┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
 │                                                   System Paramter                                                    │
 ├───────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────┤
-│                           host                            │                        user_name                         │
+│                                                 parameter │ value                                                    │
+├───────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┤
+│                                         binlog_cache_size │ 32768                                                    │
+│                                   bulk_insert_buffer_size │ 8388608                                                  │
+│                                          have_query_cache │ YES                                                      │
+│                                       interactive_timeout │ 28800                                                    │
+│                                          join_buffer_size │ 262144                                                   │
+│                                           key_buffer_size │ 8388608                                                  │
+│                                   key_cache_age_threshold │ 300                                                      │
+│                                      key_cache_block_size │ 1024                                                     │
+│                                  key_cache_division_limit │ 100                                                      │
+│                                               large_pages │ OFF                                                      │
+│                                          locked_in_memory │ OFF                                                      │
+│                                           long_query_time │ 10.000000                                                │
+│                                        max_allowed_packet │ 4194304                                                  │
+│                                     max_binlog_cache_size │ 18446744073709547520                                     │
+│                                           max_binlog_size │ 1073741824                                               │
+│                                           max_connections │ 151                                                      │
+│                                        max_connect_errors │ 100                                                      │
+│                                             max_join_size │ 18446744073709551615                                     │
+│                                  max_length_for_sort_data │ 1024                                                     │
+│                                         max_seeks_for_key │ 18446744073709551615                                     │
+│                                           max_sort_length │ 1024                                                     │
+│                                            max_tmp_tables │ 32                                                       │
+│                                      max_user_connections │ 0                                                        │
+│                                     optimizer_prune_level │ 1                                                        │
+│                                    optimizer_search_depth │ 62                                                       │
+│                                          query_cache_size │ 1048576                                                  │
+│                                          query_cache_type │ OFF                                                      │
+│                                       query_prealloc_size │ 8192                                                     │
+│                                    range_alloc_block_size │ 4096                                                     │
+│                                          read_buffer_size │ 131072                                                   │
+│                                      read_rnd_buffer_size │ 262144                                                   │
+│                                          sort_buffer_size │ 262144                                                   │
+│                                                  sql_mode │ ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,N │
+│                                                           │ O_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_US │
+│                                                           │ ER,NO_ENGINE_SUBSTITUTION                                │
+│                                         thread_cache_size │ 9                                                        │
+│                                            tmp_table_size │ 16777216                                                 │
+│                                              wait_timeout │ 28800                                                    │
+└───────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────┘
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│                                                   Optimizer Switch                                                   │
+├───────────────────────────────────────────────────────────┬──────────────────────────────────────────────────────────┤
+│                                               switch_name │ value                                                    │
+├───────────────────────────────────────────────────────────┼──────────────────────────────────────────────────────────┤
+│                                               index_merge │ on                                                       │
+│                                         index_merge_union │ on                                                       │
+│                                    index_merge_sort_union │ on                                                       │
+│                                  index_merge_intersection │ on                                                       │
+│                                 engine_condition_pushdown │ on                                                       │
+│                                  index_condition_pushdown │ on                                                       │
+│                                                       mrr │ on                                                       │
+│                                            mrr_cost_based │ on                                                       │
+│                                         block_nested_loop │ on                                                       │
+│                                        batched_key_access │ off                                                      │
+│                                           materialization │ on                                                       │
+│                                                  semijoin │ on                                                       │
+│                                                 loosescan │ on                                                       │
+│                                                firstmatch │ on                                                       │
+│                                          duplicateweedout │ on                                                       │
+│                       subquery_materialization_cost_based │ on                                                       │
+│                                      use_index_extensions │ on                                                       │
+│                                   condition_fanout_filter │ on                                                       │
+│                                             derived_merge │ on                                                       │
 └───────────────────────────────────────────────────────────┴──────────────────────────────────────────────────────────┘
 
  >>>> original sql <<<<
@@ -69,10 +130,9 @@ Wed Feb 15 22:56:09 CST 2017 WARN: Establishing SSL connection without server's 
         stars > 0
     )
 ------------------------------------------------------------------------------------------------------------------------
-
- >>>> explain report <<<<
-
-┌────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬───────────────────────────────┐
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ explain report                                                                                                                                                                                                           │
+├────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬────────────────┬───────────────────────────────┤
 │ id             │ select_type    │ table          │ partitions     │ type           │ possible_keys  │ key            │ key_len        │ ref            │ rows           │ filtered       │ Extra                          │
 ├────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼────────────────┼───────────────────────────────┤
 │ 1              │ SIMPLE         │ t_user         │                │ ALL            │ PRIMARY        │                │                │                │ 3              │ 100.0          │                                │
@@ -81,10 +141,9 @@ Wed Feb 15 22:56:09 CST 2017 WARN: Establishing SSL connection without server's 
 │                │                │                │                │                │                │                │                │                │                │                │ Using join buffer (Block       │
 │                │                │                │                │                │                │                │                │                │                │                │ Nested Loop)                   │
 └────────────────┴────────────────┴────────────────┴────────────────┴────────────────┴────────────────┴────────────────┴────────────────┴────────────────┴────────────────┴────────────────┴───────────────────────────────┘
-
- >>>> explain message report <<<<
-
-┌────────────────┬────────────────┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+┌──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ explain message report                                                                                                                                                                                                   │
+├────────────────┬────────────────┬────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ level          │ code           │ message                                                                                                                                                                                 │
 ├────────────────┼────────────────┼────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
 │ Warning        │ 1681           │ 'EXTENDED' is deprecated and will be removed in a future release.                                                                                                                       │
@@ -95,15 +154,53 @@ Wed Feb 15 22:56:09 CST 2017 WARN: Establishing SSL connection without server's 
 │                │                │ (`annal`.`t_user`.`username` = `annal`.`t_topic`.`username`))                                                                                                                           │
 └────────────────┴────────────────┴────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
 
+ :: optimizer sql ::
+
+  select
+    `annal`.`t_user`.`username`
+  AS
+    `username`,`annal`.`t_user`.`password`
+  AS
+    `password`,`annal`.`t_user`.`nickname`
+  AS
+    `nickname`,`annal`.`t_user`.`email`
+  AS
+    `email`,`annal`.`t_user`.`avatar`
+  AS
+    `avatar`,`annal`.`t_user`.`signature`
+  AS
+    `signature`,`annal`.`t_user`.`followers`
+  AS
+    `followers`,`annal`.`t_user`.`following`
+  AS
+    `following`,`annal`.`t_user`.`topics`
+  AS
+    `topics`,`annal`.`t_user`.`privated`
+  AS
+    `privated`,`annal`.`t_user`.`state`
+  AS
+    `state`,`annal`.`t_user`.`created`
+  AS
+    `created`,`annal`.`t_user`.`logined`
+  AS
+    `logined`
+  from
+    `annal`.`t_user` semi
+  join
+    (
+      `annal`.`t_topic`
+    )
+  where
+    (
+      (
+        `annal`.`t_topic`.`stars` > 0
+      )
+      and (
+        `annal`.`t_user`.`username` = `annal`.`t_topic`.`username`
+      )
+    )
+
 analyze finished.
-
-Disconnected from the target VM, address: '127.0.0.1:50058', transport: 'socket'
-优化后语句:
-
-select `annal`.`t_user`.`username` AS `username`,`annal`.`t_user`.`password` AS `password`,`annal`.`t_user`.`nickname` AS `nickname`,`annal`.`t_user`.`email` AS `email`,`annal`.`t_user`.`avatar` AS `avatar`,`annal`.`t_user`.`signature` AS `signature`,`annal`.`t_user`.`followers` AS `followers`,`annal`.`t_user`.`following` AS `following`,`annal`.`t_user`.`topics` AS `topics`,`annal`.`t_user`.`privated` AS `privated`,`annal`.`t_user`.`state` AS `state`,`annal`.`t_user`.`created` AS `created`,`annal`.`t_user`.`logined` AS `logined` from `annal`.`t_user` semi join (`annal`.`t_topic`) where ((`annal`.`t_topic`.`stars` > 0) and (`annal`.`t_user`.`username` = `annal`.`t_topic`.`username`))
-
-Process finished with exit code 0
-
 ```
 
 ## 术语
